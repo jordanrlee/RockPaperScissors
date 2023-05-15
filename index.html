@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<title>RPS Game</title>
+</head>
+<body>
+	<section class="game flex flex-col h-screen w-screen justify-center items-center">
+		<div class="title">Rock Paper Scissor Game</div>
+		 
+		<div class="score">
+            <div class="roundsLeft">Rounds Left: 10 </div>
+			<div class="playerScore">
+				<h2>Player</h2>
+				<p class="p-count count">0</p>
+			</div>	
+			<div class="computerScore">
+				<h2>Computer</h2>
+				<p class="c-count count">0</p>
+			</div>
+
+            <div class="ties">
+                <h2>Ties</h2>
+                <p class="t-count count">0</p>
+            </div>
+		</div>
+		
+		<div class="weapChoice">Choose your weapon</div>
+		
+		
+		<div class="options">
+			<button class="rock">Rock</button>
+			<button class="paper">Paper</button>
+			<button class="scissor">Scissors</button>	
+		</div>
+		
+		<div class="result"></div>
+		
+		<button class="reset"></button>
+
+	</section>
+
+	<script src="rpsGame.js"></script>
+</body>
+</html>
